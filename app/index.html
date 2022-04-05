@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Timezone shenanigans</title>
+  </head>
+  <body>
+    <div>Initial server time from first API request: <span id="server-time" /></div>
+    <div>(as GMT): <span id="server-time-as-gmt" /></div>
+    <hr />
+    <div>Client skew (milliseconds): <span id="offset" /></div>
+    <hr />
+    <table>
+      <thead>
+        <tr>
+          <th>Local time</th>
+          <th>Calculated server time</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td id="local-time" />
+          <td id="calculated-time" />
+        </tr>
+        <tr>
+          <td id="local-time-as-gmt" />
+          <td id="calculated-time-as-gmt" />
+        </tr>
+      </tbody>
+    </table>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
